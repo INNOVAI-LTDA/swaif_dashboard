@@ -1,0 +1,21 @@
+Context:
+- Repo: INNOVAI-LTDA/swaif_dashboard
+- Branch: dev
+- Folder constraints:
+  - UI in apps/web/
+  - Orchestrator (FastAPI) in services/orchestrator/
+  - Agent (Python) in services/agent/
+- Specs are in ARTIFACT_BUNDLE/*.md
+- Do not hard-code UI labels.
+- This request is PLAN ONLY: do not generate code, do not create files.
+
+Task:
+Read the documents in ARTIFACT_BUNDLE (especially 01, 02, 04, 05, 06, 07) and produce:
+1) A step-by-step implementation plan for MVP Step B1 ("minimal end-to-end hello run") that proves UI ↔ orchestrator ↔ agent loop.
+2) Exact endpoints to implement first (names + request/response examples).
+3) Minimal UI pages/components to implement first.
+4) Minimal agent loop behavior.
+5) Local run instructions for Windows + VSCode terminals.
+
+Output format:
+- Write the plan as a markdown document that I can save to ARTIFACT_BUNDLE/PLAN_STEP_B1.md.
