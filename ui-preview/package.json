@@ -1,0 +1,22 @@
+{
+  "name": "ui-preview",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4174 --strictPort",
+    "dev:swaif": "vite --host 127.0.0.1 --port 4174 --strictPort --force",
+    "router": "node domain-router.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4175 --strictPort"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3"
+  }
+}
