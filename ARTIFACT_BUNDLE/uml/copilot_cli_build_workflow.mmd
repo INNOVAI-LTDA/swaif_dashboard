@@ -1,0 +1,13 @@
+sequenceDiagram
+  autonumber
+  actor You as Operator
+  participant Dev as dev branch (INNOVAI-LTDA/swaif_dashboard)
+  participant Copilot as copilot-cli
+  participant Git as git
+
+  Note over Dev: State D0: dev == main; structure folders exist; docs may be missing
+  You->>Copilot: Prompt: "Generate docs under ARTIFACT_BUNDLE only (no code)."
+  Copilot-->>You: Outputs: requirements/spec/runbook/diagrams
+  You->>Git: Create files on dev
+  You->>Git: git add -A && git commit && git push origin dev
+  Note over Dev: State D1: docs committed, ready to start implementation prompts

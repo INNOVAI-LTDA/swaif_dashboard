@@ -1,0 +1,20 @@
+stateDiagram-v2
+  [*] --> Requirements
+  Requirements --> Plan
+  Plan --> Gate_PreImplement: if enabled
+  Gate_PreImplement --> Implement: approved
+  Gate_PreImplement --> Plan: rejected (revise)
+
+  Plan --> Implement: if Gate_PreImplement disabled
+
+  Implement --> Gate_PreCommit: if enabled
+  Gate_PreCommit --> Test: approved
+  Gate_PreCommit --> Implement: rejected (revise)
+
+  Implement --> Test: if Gate_PreCommit disabled
+
+  Test --> Build
+  Build --> Deploy
+  Deploy --> Verify
+  Verify --> Report
+  Report --> [*]

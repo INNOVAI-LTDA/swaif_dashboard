@@ -1,0 +1,5 @@
+flowchart LR
+  UI[Next.js UI<br/>apps/web] --> API[FastAPI Orchestrator<br/>services/orchestrator]
+  Agent[Local Agent<br/>services/agent] --> API
+  Agent --> Tools[Local Tools<br/>git / gh / copilot-cli / npm]
+  Tools --> GH[(GitHub<br/>Repo + Actions)]
