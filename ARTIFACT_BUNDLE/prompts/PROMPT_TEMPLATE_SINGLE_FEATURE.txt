@@ -1,0 +1,13 @@
+Read and follow copilot-instructions.md.
+
+Implement ONLY feature <F###> as defined in:
+ARTIFACT_BUNDLE/features/F###_<slug>.md
+
+Constraints:
+- Do not implement any other feature.
+- Do not refactor unrelated code.
+- Keep changes minimal and runnable on Windows (PowerShell).
+
+Output:
+- Provide exact file changes (file paths + content).
+- Provide a short manual test checklist (PowerShell commands).

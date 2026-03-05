@@ -1,0 +1,3 @@
+# Paths the agent is allowed to read/write under (template)
+# Recommend using SWAIF_WORKSPACE_ROOT and the repo directory.
+C:\swaif-workspaces

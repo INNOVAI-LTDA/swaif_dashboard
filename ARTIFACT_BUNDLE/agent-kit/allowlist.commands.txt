@@ -1,0 +1,7 @@
+# One per line (template)
+python
+py
+node
+npm
+git
+gh

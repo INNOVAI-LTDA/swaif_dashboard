@@ -1,0 +1,10 @@
+ARTIFACT_BUNDLE/
+  agent-kit/
+    00_OVERVIEW.md
+    01_INSTALL_WINDOWS.md
+    02_CONFIGURATION.md
+    03_ALLOWLIST_POLICY.md
+    04_RUNBOOK_LOCAL_MODE.md
+    agent.env.example
+    allowlist.commands.txt
+    allowlist.paths.txt
