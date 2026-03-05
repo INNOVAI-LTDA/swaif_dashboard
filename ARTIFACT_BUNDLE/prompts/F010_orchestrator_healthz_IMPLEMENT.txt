@@ -1,0 +1,12 @@
+Read and follow copilot-instructions.md.
+
+Implement ONLY feature F010 as specified in:
+ARTIFACT_BUNDLE/features/F010_orchestrator_healthz.md
+
+Constraints:
+- Create/modify files only under services/orchestrator/
+- Keep it minimal and runnable on Windows
+
+Output:
+- Provide file-by-file contents for all new/modified files.
+- Provide the exact PowerShell commands to run and verify /healthz.
