@@ -54,6 +54,11 @@ Each step below documents:
 - **Human check**: what you review before moving on
 
 We recommend running the lifecycle in **small feature slices**, as defined in `ARTIFACT_BUNDLE/FEATURE_CATALOG.md`.
+Implementation is executed **feature-by-feature** using:
+- `ARTIFACT_BUNDLE/FEATURE_CATALOG.md` (feature list)
+- `ARTIFACT_BUNDLE/PROJECT_ROADMAP.md` (recommended order/milestones)
+- `ARTIFACT_BUNDLE/features/F###_<slug>.md` (single-feature specs)
+- `ARTIFACT_BUNDLE/prompts/F###_<slug>.txt` (repeatable copilot-cli prompts)
 
 ---
 
@@ -108,6 +113,7 @@ We recommend running the lifecycle in **small feature slices**, as defined in `A
 ---
 
 # STEP 3 — Implement (Code changes; small scope)
+
 
 ### Command
 - copilot-cli (interactive or prompt-file driven)
